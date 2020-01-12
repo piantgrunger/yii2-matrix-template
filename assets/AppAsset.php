@@ -21,16 +21,16 @@ class AppAsset extends AssetBundle
 
 
         'template/dist/css/style.min.css',
-        'template/dist/css/style.css',
+       //'template/dist/css/style.css',
 
         'template/assets/libs/flot/css/float-chart.css',
 
     ];
     public $js = [
      //  'js/yii_overrides.js',
-    "template/assets/libs/jquery/dist/jquery.min.js",
+  //  "template/assets/libs/jquery/dist/jquery.min.js",
     "template/assets/libs/popper.js/dist/umd/popper.min.js",
-    "template/assets/libs/bootstrap/dist/js/bootstrap.min.js",
+    //"template/assets/libs/bootstrap/dist/js/bootstrap.min.js",
     "template/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js",
     "template/assets/extra-libs/sparkline/sparkline.js",
     "template/dist/js/waves.js",

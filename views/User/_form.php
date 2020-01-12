@@ -1,8 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
-use kartik\widgets\SwitchInput;
+use yii\bootstrap4\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\administrator\models\User */
@@ -16,13 +15,6 @@ use kartik\widgets\SwitchInput;
 	<?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
 	<?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-
-	<?= $form->field($model, 'status')->widget(SwitchInput::classname(), [
-		'pluginOptions' => [
-			'onText' => 'Active',
-			'offText' => 'Banned',
-		]
-	]) ?>
 
 	<?php if (!$model->isNewRecord) { ?>
 		<strong> Leave blank if not change password</strong>
