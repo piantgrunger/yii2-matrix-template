@@ -13,10 +13,12 @@ $config = [
      'class' => '\hscstudio\mimin\components\AccessControl',
      'allowActions' => [
         // add wildcard allowed action here!
-        'site/*',
+        'site/logout',
+        'site/login',
         'debug/*',
         'mimin/*', // only in dev mode
     ],
+    
 ],
 
 
@@ -66,6 +68,8 @@ $config = [
             ]
        ]
     ],
+    
+
 
 
    'gridview' =>  [
@@ -87,6 +91,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        
 
 
        'authManager' => [

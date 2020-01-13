@@ -20,7 +20,7 @@ class Menu extends \yii\widgets\Menu
      * @inheritdoc
      * Styles all labels of items on sidebar by AdminLTE
      */
-    public $labelTemplate = '<span>{label}</span>';
+    public $labelTemplate = '<span class="hide-menu">{label}</span>';
     public $submenuTemplate = "\n<ul aria-expanded='false' class='collapse  first-level' {show}>\n{items}\n</ul>\n";
     public $activateParents = true;
     public $defaultIconHtml = '<i class="fa fa-circle-o"></i> ';
@@ -29,7 +29,7 @@ class Menu extends \yii\widgets\Menu
      * @var string is prefix that will be added to $item['icon'] if it exist.
      * By default uses for Font Awesome (http://fontawesome.io/)
      */
-    public static $iconClassPrefix = 'fa fa-';
+    public static $iconClassPrefix = 'mdi mdi-';
 
     private $noDefaultAction;
     private $noDefaultRoute;
@@ -123,7 +123,7 @@ class Menu extends \yii\widgets\Menu
             $menu = $this->renderItem($item);
             if (!empty($item['items'])) {
                 $menu .= strtr($this->submenuTemplate, [
-                    '{show}' => $item['active'] ? "style='display: block'" : '',
+                    '{show}' => $item['active'] ? "in" : '',
                     '{items}' => $this->renderItems($item['items']),
                 ]);
             }

@@ -1,7 +1,7 @@
 <?php
     $menuItems =
         [
-                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['/'], 'visible' => !Yii::$app->user->isGuest],
+                    ['label' => 'Dashboard', 'icon' => 'view-dashboard', 'url' => ['/'], 'visible' => !Yii::$app->user->isGuest],
 
                      [
                         'visible' => !Yii::$app->user->isGuest,
@@ -9,9 +9,9 @@
                         'icon' => 'users',
                         'url' => '#',
                         'items' => [
-                    ['label' => 'App. Route', 'icon' => 'user-o', 'url' => ['/route/'], 'visible' => !Yii::$app->user->isGuest],
-                    ['label' => 'Role', 'icon' => 'users', 'url' => ['/role/'], 'visible' => !Yii::$app->user->isGuest],
-                    ['label' => 'User', 'icon' => 'user', 'url' => ['/user/'], 'visible' => !Yii::$app->user->isGuest],
+                    ['label' => 'App. Route', 'icon' => 'routes', 'url' => ['/route/'], 'visible' => !Yii::$app->user->isGuest],
+                    ['label' => 'Role', 'icon' => 'account-multiple', 'url' => ['/role/'], 'visible' => !Yii::$app->user->isGuest],
+                    ['label' => 'User', 'icon' => 'account-plus', 'url' => ['/user/'], 'visible' => !Yii::$app->user->isGuest],
                    ], ],
 
                 ];

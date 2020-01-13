@@ -70,7 +70,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        
+        //
           $model = new LoginForm();
         return $this->render('index',['model'=>$model]);
     }
@@ -90,6 +90,8 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {
+            $this->layout = 'main-login';
+        
             return $this->render('login', [
                 'model' => $model,
             ]);
