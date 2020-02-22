@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
 
         'template/dist/css/style.min.css',
        //'template/dist/css/style.css',
+        'css/spinners.css',
 
         'template/assets/libs/flot/css/float-chart.css',
 
@@ -41,6 +42,7 @@ class AppAsset extends AssetBundle
     public $depends = [
        'yii\web\YiiAsset',
     'yii\bootstrap4\BootstrapAsset',
+    'rmrevin\yii\fontawesome\AssetBundle',
         //additional import of third party alert project
          'app\assets\SweetAlertAsset',
     ];
